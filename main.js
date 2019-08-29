@@ -5,9 +5,19 @@
 //     - 入力: 14, 期待する結果: false
 
 // ここにisOddNumber関数を作る
-
+function isOddNumber(num){
+    let result = "";
+    if(num % 2 === 0){
+        result = "true";
+    }else{
+        result = "false";       
+    }
+    return result;
+}
 
 // ここにconsole.logを使って「9」「14」を引数に渡したときの結果値を出力する
+// console.log(isOddNumber(9));
+// console.log(isOddNumber(14));    
 
 
 
@@ -23,8 +33,23 @@
 
 // ここにfactorial関数を作る
 
+const factorial = function(num){
+    let result = 1;
+    for(i=num;i>0;i--){
+        result *= i;
+    }
+    return result;
+}
+
 
 // ここにconsole.logを使って「4」「5」を引数に渡したときの結果値を出力する
+// console.log(factorial(1));
+// console.log(factorial(2));
+// console.log(factorial(3));
+// console.log(factorial(4));
+// console.log(factorial(5));
+// console.log(factorial(6));
+// console.log(factorial(7));
 
 
 
@@ -36,6 +61,12 @@
 //   - 「先頭1文字を大文字にするやり方」の参考記事: https://qiita.com/ichironagata/items/091f8cd629b82b0dcbf8
 
 // ここにconvertFirstCharacterToUpperCase関数を作る
+const convertFirstCharacterToUpperCase = (str,pos) => {
+ 
+    let text2 = str.charAt(0).toUpperCase() + str.slice(pos);
+  return text2;  
+}
 
 
 // ここにconsole.logを使って「'hello'」「'world'」を引数に渡したときの結果値を出力する
+console.log(convertFirstCharacterToUpperCase("aello",1));
